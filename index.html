@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Product App</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark">
+	  <h4 class="text-white">Adidas Original Shop</h2>
+	</nav>
+
+	<div id="app">
+		<div class="container mt-1">
+			<div class="cart">
+				<span>Cart({{ cart.length }})</span>
+			</div>
+			
+			<product :premium="premium" @add-to-cart="updateCart"></product>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> 
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
